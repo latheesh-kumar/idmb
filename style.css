@@ -1,0 +1,110 @@
+*{
+			width: 100%;
+		}
+		body{
+			background: url("bg-img.jpg")no-repeat center center;
+		}
+		.row{
+			margin: 0;
+			margin-top: 3%;
+		}
+		.form-row{
+			margin-top: 4%;
+		}
+		h1{color: #fff;
+	    font-family: sans-serif;
+	    text-align: center;
+	    font-weight: 600;
+	    margin-top: 4%;
+		}
+		span {
+	    display: inline-block;
+	    margin-bottom: 2%;
+	    font-size: 13px;
+		}
+		.desc{
+		font-size: 15px;
+	    text-align: center;
+	    color: #7b7878;
+	    font-family: open-sans;
+		}
+
+		h3{
+		text-align: center;
+	    color: #ff0c4f;
+	    font-weight: 700;
+	    letter-spacing: 2px;
+		}
+		.cards {
+	    margin-top: 5%;
+	    border: 1px solid #dcdcdc;
+	    background: #fff;
+	    display: none;
+	    margin-bottom: 5%;
+		}
+		.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active {
+	    color: #fff;
+	    background-color: #ff0c4f;
+	    border-color: #ff0c4f;
+	    font-weight: 600;
+		}
+		
+		primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    	color: #fff;
+        background-color: #ff0c4f;
+	    border-color: #ff0c4f;
+		}
+		.btn-primary.focus, .btn-primary:focus,.btn-primary:hover,primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+    		box-shadow: none;
+		}
+		.form-control:focus,.form-control:hover,.form-control:active {
+			border-color: #ff0c4f;
+			box-shadow: none;
+		}
+
+	.animationload {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.osahanloading {
+    animation: 1.5s linear 0s normal none infinite running osahanloading;
+    background: #fed37f none repeat scroll 0 0;
+    border-radius: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+}
+.osahanloading::after {
+    animation: 1.5s linear 0s normal none infinite running osahanloading_after;
+    border-color: #85d6de transparent;
+    border-radius: 80px;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    height: 80px;
+    left: -15px;
+    position: absolute;
+    top: -15px;
+    width: 80px;
+}
+@keyframes osahanloading {
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    background: #85d6de none repeat scroll 0 0;
+    transform: rotate(180deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
