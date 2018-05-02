@@ -15,7 +15,7 @@ $(document).ready(() => {
 		$.ajax({
 			type:'GET',
 			dataType:'json',
-			url:"http://www.omdbapi.com/?apikey=203dc767&i="+id+"&t="+title+"&y="+year+"",
+			url:"https://www.omdbapi.com/?apikey=203dc767&i="+id+"&t="+title+"&y="+year+"",
 			success: (data) =>{
 				//console.log(data);
 				let source="";
