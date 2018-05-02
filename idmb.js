@@ -17,7 +17,7 @@ $(document).ready(() => {
 			dataType:'json',
 			url:"https://www.omdbapi.com/?apikey=203dc767&i="+id+"&t="+title+"&y="+year+"",
 			success: (data) =>{
-				console.log(data);
+				//console.log(data);
 				if(data.Response=='False'){
 					alert(data.Error);
 				}
@@ -52,7 +52,6 @@ $(document).ready(() => {
 			complete: () =>{
 				$('.cards').css('display','block');
 				$('.loader').css('display','none');
-			},
-			jsonp: 'jsonp'
+			}
 		});
 	}
